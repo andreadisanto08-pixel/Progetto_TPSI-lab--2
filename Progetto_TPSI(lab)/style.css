@@ -1,0 +1,238 @@
+body {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  background-color: rgb(132, 127, 134);
+  color: black;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 80px 20px 40px 20px;
+  box-sizing: border-box;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/black-and-white-vs-coloured-v0-hqz6f5yzumc81.webp);
+  background-position: center;
+  opacity: 0.60; 
+  z-index: -1;  
+}
+.top-bar {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;        
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px 20px; 
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.menu {
+  margin-bottom: 30px;
+  background-color: white;
+  border: 4px solid rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+.menu a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  font-weight: bold;
+}
+
+.griglia {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px; 
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+.quadro {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: white;
+  border: 4px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  padding: 15px;
+  color: black;
+  box-sizing: border-box;
+}
+
+.portatore img, 
+.stand img {
+  width: 120px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 5px solid black;
+}
+
+.desc {
+  flex: 1;
+}
+
+.desc h2 {
+  margin: 0 0 10px 0;
+  color: #7f17c4;
+}
+
+.desc p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.quadro:hover {
+  opacity: 0.98;
+}
+
+.mini-foto {
+  width: 90px;        
+  height: 90px;       
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  border-radius: 10px;
+}
+
+.mini-foto:hover {
+  transform: rotate(180deg);
+}
+
+.spiegazione {
+  border: 4px solid rgb(0, 0, 0);
+  border-radius: 30px;
+  padding: 15px;
+  color: black;
+  margin-bottom: 20px;
+  background-color: white;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+.faq-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: white;
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  box-sizing: border-box;
+  color: black;
+}
+
+.faq-container h2 {
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.faq-item:last-child {
+  border-bottom: none; 
+}
+
+.faq-item h3 {
+  margin: 0 0 5px 0;
+  color: #000000;
+  font-size: 1.1rem;
+}
+
+.faq-item p {
+  margin: 0;
+  line-height: 1.5;
+  color: #000000;
+}
+
+h1 {
+  background-color: #ffffff;
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.product-card {
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.2s;
+  background-color: #ffffff;
+  border: 4px solid rgb(0, 0, 0);
+  box-sizing: border-box;
+}
+
+.product-card:hover {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  transform: translateY(-4px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.product-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 5px 0;
+  color: #000;
+  text-align: center;
+}
+
+.product-price {
+  font-size: 1.1rem;
+  color: #B12704;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.buy-button {
+  background: #7f17c4;
+  border: 3px solid #421255;
+  border-radius: 20px;
+  padding: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.buy-button:hover {
+  background: #7f17c4;
+}
+
+
